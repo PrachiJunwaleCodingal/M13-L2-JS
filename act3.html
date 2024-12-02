@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Act3- Scope</title>
+</head>
+
+<body>
+    <p>A function can access variables defined inside the function</p>
+    <button type="button" onclick="fun1()">Button</button>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <script>
+
+        function fun1() {
+            var x = 10;
+            document.getElementById("d1").innerHTML = x + x;
+        }
+        document.getElementById("d2").innerHTML = x;  
+    </script>
+
+</body>
+
+</html>
